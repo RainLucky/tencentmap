@@ -1,0 +1,118 @@
+html {
+    font-size: 100px;
+}
+
+#wrap header {
+    height: 0.4rem;
+}
+
+/* 搜索 */
+#search {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#search .content .search-up,
+#search .content .search-md,
+#search .content .search-bt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#search .content .search-up {
+    margin-top: 0.5rem;
+}
+
+#search .content .search-up img {
+    height: 2.25rem;
+}
+
+#search .content .search-md {
+    margin-top: 0.25rem;
+}
+
+#search .content .search-bt {
+    margin-top: 0.25rem;
+    height: 0.4rem;
+}
+
+
+#search .content div.search-bt form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+
+#search .content div.search-bt form input {
+    width: 3.4rem;
+    height: 0.4rem;
+    color: rgba(88, 99, 126, 0.8);
+    padding-left: 0.15rem;
+    line-height: 0.4rem;
+    border-radius: 0.05rem 0 0 0.05rem;
+    border: 1px solid #3280f1;
+    width: 75%;
+}
+
+#search .content div.search-bt form input:focus,
+#search .content div.search-bt form button:focus {
+    outline: none;
+}
+
+#search .content div.search-bt form button {
+    width: 0.75rem;
+    height: 100%;
+    border: 0px;
+    border-radius: 0 0.05rem 0.05rem 0;
+    width: 20%;
+}
+
+
+/* 见证网点列表 */
+#outlets-list {
+    margin-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    overflow: hidden;
+}
+
+#outlets-list div.ol-md {
+    margin-top: 0.1rem;
+    background: #ffffff;
+    width: 100%;
+    overflow: hidden;
+}
+
+#outlets-list div.ol-md .ol-md-up {
+    margin-top: 0.15rem;
+}
+
+#outlets-list div.ol-md .ol-md-up p {
+    line-height: 0.2rem;
+}
+
+#outlets-list div.ol-md .ol-md-up p.f-30 {}
+
+#outlets-list div.ol-md .ol-md-up p.tel {
+    margin-top: 0.15rem;
+    font-size: 0.24rem;
+}
+
+#outlets-list div.ol-md .ol-md-up p.addr {
+    margin-top: 0.1rem;
+}
+
+#outlets-list div.ol-md .ol-md-bt {
+    margin-top: 0.15rem;
+    font-size: 0;
+    width: 100%;
+    height: 1.75rem;
+    margin-bottom: 0.15rem;
+}
+
+#outlets-list div.ol-md .ol-md-bt img {
+    width: 100%;
+}
