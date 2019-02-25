@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航哪去了??</title>
+    <style>
+        html {
+            font-size: 100px;
+        }
+
+        #wrap header {
+            height: auto;
+        }
+
+        #wrap header div.banner {
+            position: relative;
+            display: flex;
+        }
+
+        #wrap header div.banner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #wrap header div.banner div.btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: absolute;
+            bottom: 0.15rem;
+            width: 100%;
+            box-sizing: border-box;
+            justify-content: space-around;
+        }
+
+        #wrap header div.banner div.btn a {
+            display: inline-block;
+            text-align: center;
+            width: 0.845rem;
+            height: 0.3rem;
+            color: #ffffff;
+            font-size: 0.13rem;
+            background: rgba(0, 0, 0, 0.5);
+            line-height: 0.3rem;
+            margin-right: 0.025rem;
+            width: 22.6%;
+        }
+
+        #wrap header div.banner div.btn a:last-of-type {
+            margin-right: 0;
+        }
+
+        #wrap header div.banner div.btn a.active {
+            border: 1px solid #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="banner">
+                <img src="img/19034_en_1.jpg" alt="收费banner图">
+                <div class="btn content">
+                    <a class="active" href="#">子页1</a>
+                    <a href="#">子页2</a>
+                    <a href="#">子页3</a>
+                    <a href="#">子页4</a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+</body>
+
+</html>
