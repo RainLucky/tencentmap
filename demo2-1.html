@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航哪去了??</title>
+    <style>
+        .header {
+            position: relative;
+            width: 100%;
+        }
+
+        .headerImg {
+            width: 100%;
+            background: url("../img/news/HKbanner.png");
+            height: 100%;
+        }
+
+        .titleBtDiv {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 0 15px;
+            /**弹性盒子*/
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            bottom: 0;
+            position: absolute;
+            justify-content: space-around;
+        }
+
+        .titleBtDiv a.active {
+            border: 1px solid #ffffff;
+        }
+
+        .titleBt {
+            width: 90px;
+            height: 30px;
+            line-height: 30px;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            font-size: 13px;
+            background: rgba(0, 0, 0, .5);
+            display: inline-block;
+            width: 28%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="wrap">
+            <header>
+                <div class="header">
+                    <img class="headerImg" src="img/19034_en_1.jpg">
+                    <div class="titleBtDiv">
+                        <a href="#" class="titleBt active">港股导航</a>
+                        <a href="#" class="titleBt">美股早餐</a>
+                        <a href="#" class="titleBt">通知公告</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <script>
+
+        </script>
+</body>
+
+</html>
