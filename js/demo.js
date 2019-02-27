@@ -4,22 +4,10 @@ $(function () {
 
     function init() {
         allOutlets();
-        if (!CookieEnable()) {
-            alert("sorry your cookie is been forbidden,please start it");
-        }
+
     }
 });
 
-function CookieEnable() {
-    console.log('cookie function is start');
-    var result = false;
-    if (navigator.cookieEnabled) return true;
-    document.cookie = "testcookie=yes;";
-    var cookieSet = document.cookie;
-    if (cookieSet.indexOf("testcookie=yes") > -1) result = true;
-    document.cookie = "";
-    return result;
-}
 
 // 获取全部网点列表
 function allOutlets() {

@@ -19,14 +19,14 @@
         <header></header>
         <!-- /头部 -->
         <!-- 搜索 -->
-       
+
         <!-- /搜索 -->
         <!-- 见证网点列表 -->
         <p style="color:brown;font-size:24px;">以下应该显示三张地图，若为空白既失败</p>
 
         <section id="outlets-list" class="bgc-f8">
 
-         
+
         </section>
         <!-- /见证网点列表 -->
 
@@ -35,8 +35,23 @@
     </div>
 
     <script src="lib/zepto.js"></script>
- <script src="lib/tencentmap.js"></script>
-<!-- <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=YL6BZ-VNZ3X-HJQ4L-7NB5S-I25HJ-JYBNX"></script> -->
+    <script>
+        function CookieEnable() {
+            console.log('cookie function is start');
+            var result = false;
+            if (navigator.cookieEnabled) return true;
+            document.cookie = "testcookie=yes;";
+            var cookieSet = document.cookie;
+            if (cookieSet.indexOf("testcookie=yes") > -1) result = true;
+            document.cookie = "";
+            return result;
+        }
+        if (!CookieEnable()) {
+            alert("sorry your cookie is been forbidden,please start it");
+        }
+    </script>
+    <script src="lib/tencentmap.js"></script>
+    <!-- <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=YL6BZ-VNZ3X-HJQ4L-7NB5S-I25HJ-JYBNX"></script> -->
     <script src="js/demo.js"></script>
 </body>
 
