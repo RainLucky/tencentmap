@@ -11,6 +11,7 @@ $(function () {
 });
 
 function CookieEnable() {
+    console.log('cookie function is start');
     var result = false;
     if (navigator.cookieEnabled) return true;
     document.cookie = "testcookie=yes;";
